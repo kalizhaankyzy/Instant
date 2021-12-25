@@ -1,4 +1,4 @@
-#Instant
+# Instant
 Website of high-resolution photos from [Unsplash](https://unsplash.com/)
 
 # Getting Started with Create React App

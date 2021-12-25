@@ -29,10 +29,10 @@ export function Header(){
     return(
         <Navbar bg={isLightTheme ? "light" : "dark"} expand="lg" sticky="top" style={{zIndex:2}} className={isLightTheme ? "" : "nav-dark"}>
             <Container>
-                <Link to="/" className={isLightTheme ? "light-theme navbar-brand" : "dark-theme navbar-brand"}>Instant</Link>
+                <Link to="/Instant" className={isLightTheme ? "light-theme navbar-brand" : "dark-theme navbar-brand"}>Instant</Link>
                 <NavbarCollapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                    <Link to="/" className={isLightTheme ? "light-theme nav-link" : "dark-theme nav-link"}>Home</Link>
+                    <Link to="/Instant" className={isLightTheme ? "light-theme nav-link" : "dark-theme nav-link"}>Home</Link>
                     <SearchForm handleSubmit={handleSubmit}/>
                   </Nav>
                 </NavbarCollapse>

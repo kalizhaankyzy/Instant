@@ -1,0 +1,95 @@
+.popUpWindow{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    background-color: #0009;
+}
+.close-btn{
+    position: fixed;
+    z-index: 4;
+    left: 3%;
+    top: 3%;
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    color: #61dafb;
+}
+.close-btn .icon{
+    color: #d1d1d1;
+    font-size: 30px;
+}
+.close-btn .icon:hover{
+    color: #ffffff;
+}
+.popUp{
+    width: 80%;
+    height: 93%;
+    background-color: #FDFFFC;
+
+    border-radius: 4px;
+    cursor: auto;
+    color: #011627;
+    overflow-y: scroll;
+}
+.popUp img{
+    cursor: zoom-in;
+    height: 80vh;
+}
+.zoom-in img{
+    cursor: zoom-out;
+    height: 100%;
+    background-size: cover;
+}
+.author-info{
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-info div{
+    text-align: left;
+}
+.author-info div p{
+    margin: 0;
+}
+a{
+    text-decoration: none!important;
+}
+.download-btn{
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.5% 1.5%;
+    color: #767676;
+}
+.download-btn:hover{
+    border-color: black;
+    color: black;
+}
+.darkPopUpWindow .popUp{
+    background-color: #202124;
+}
+.dark-download-btn{
+    background-color: #202124;
+    color: white;
+}
+.dark-download-btn:hover{
+    color: #202124;
+    background-color: white;
+    border-color: white;
+}
+.darkPopUpWindow .author-info div{
+    color: white;
+}
+.darkPopUpWindow .author-info div a{
+    color: yellow;
+}

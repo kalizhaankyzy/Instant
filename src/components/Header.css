@@ -1,0 +1,11 @@
+.mode-btn{
+    border: none;
+    background-color: inherit;
+    font-size: 24px;
+}
+.nav-dark{
+    border-bottom: 1px solid #606162;
+}
+.dark-theme{
+    color: #eee!important;
+}

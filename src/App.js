@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Header } from './components/Header';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Main} from "./components/Main";
+import {Images} from "./components/Images";
+import {useSelector} from "react-redux";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    const theme = useSelector(store => store.theme);
+    return (
+        <div className="App" style={theme === "light" ? {backgroundColor: "white"} : {backgroundColor: "#202124"}}>
+            <Router>
+                <Header/>
+                <Routes>
+                    <Route exact path="/" element={<Main/>}></Route>
+                    <Route path="/search/:term" element={<Images/>}></Route>
+                </Routes>
+            </Router>
+        </div>
   );
 }
 

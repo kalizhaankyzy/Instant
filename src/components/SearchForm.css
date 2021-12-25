@@ -1,0 +1,37 @@
+form{
+    border-radius: 24px;
+    background-color: #eee;
+    padding: 2px;
+    margin: 0 auto;
+}
+.form-control{
+    width: 500px!important;
+    border: none!important;
+    border-radius: 24px!important;
+    background-color: #eee!important;
+}
+.search-btn{
+    border: none;
+    background-color: inherit;
+}
+.search-btn-icon{
+    font-size: 100%;
+}
+/*dark mode*/
+.form-dark{
+    background-color: #202124;
+    border: 1px white solid;
+}
+.form-dark .form-control{
+    color: white;
+}
+.form-dark:hover .form-control, .form-dark .form-control:focus{
+    background-color: white!important;
+    color: #202124;
+}
+.form-dark .form-control{
+    background-color: #202124!important;
+}
+.form-dark .search-btn{
+    color: white;
+}

@@ -1,0 +1,33 @@
+.main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main .info{
+    position: absolute;
+    bottom: 5vh;
+    right: 3vh;
+    z-index: 1;
+    background-color: #d1d1d1;
+    color: #202124;
+}
+.search-form .container form{
+    width: 60%;
+    height: 54px;
+    border-radius: 0;
+}
+.search-form .container .form-control{
+    width: 700px!important;
+    height: 90%;
+    border-radius: 0!important;
+}
+
+.search-form .container .search-btn{
+    height: 54px;
+}
